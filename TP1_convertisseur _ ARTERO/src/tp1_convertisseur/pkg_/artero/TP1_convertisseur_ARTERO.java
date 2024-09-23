@@ -21,7 +21,9 @@ public class TP1_convertisseur_ARTERO {
         Scanner sc;
 sc = new Scanner(System.in);  
 val = sc.nextDouble();
-System.out.println("Votre valeur: "+val); 
+double tempK;
+tempK= 273+val;
+System.out.println("Temperature en Kelvin: "+tempK); 
     }
     
 }
