@@ -48,6 +48,7 @@ else if (operateur==4){
 else if (operateur==5){
     result=operande1%operande2;
 }
+System.out.println("Voici le résultat: " + result);
     }
     
 }
