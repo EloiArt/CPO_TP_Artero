@@ -23,7 +23,7 @@ sc = new Scanner(System.in);
 val = sc.nextDouble();
 double tempK;
 tempK= 273+val;
-System.out.println("Temperature en Kelvin: "+tempK); 
+System.out.println("Temperature en Kelvin: "+tempK+" K"); 
     }
     
 }
