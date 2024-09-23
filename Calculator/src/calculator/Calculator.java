@@ -23,7 +23,7 @@ op = new Scanner(System.in);
 operateur = op.nextInt();
 if (operateur>5){
     System.out.println("Veuillez choisir une valeur valide"); 
-    return;
+    System.exit(0);
 }
 System.out.println("Entrez une première valeur");
 int operande1;
