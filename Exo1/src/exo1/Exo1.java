@@ -18,12 +18,12 @@ public class Exo1 {
      */
     public static void main(String[] args) {
           System.out.println("Bonjour");
-          System.out.println("Au-revoir");
 String prenom;
 Scanner sc;
 sc = new Scanner(System.in); 
 System.out.println("Bonjour, comment vous appelez-vous ?"); 
 prenom = sc.nextLine();
+ System.out.println("Au-revoir");
     }
     
 }
