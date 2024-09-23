@@ -23,7 +23,9 @@ sc = new Scanner(System.in);
 val = sc.nextDouble();
 double tempK;
 tempK= 273+val;
-System.out.println("Temperature en Kelvin: "+tempK+" K"); 
+System.out.println("Temperature en degré celcius: "+ val + " ℃"+"\nTemperature en Kelvin: "+tempK+" K"); 
     }
+public static double CelciusVersKelvin (double tCelcius) {
     
+}    
 }
