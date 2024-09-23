@@ -5,7 +5,7 @@
 package calculator;
 
 /**
- * TP0 Parte 3
+ * TP0 Partie 3
  * @author eloi
  */
 public class Calculator {
