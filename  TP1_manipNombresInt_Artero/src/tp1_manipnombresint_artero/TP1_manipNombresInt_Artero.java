@@ -4,6 +4,8 @@
  */
 package tp1_manipnombresint_artero;
 
+import java.util.Scanner;
+
 /**
  *
  * @author eloi
@@ -14,7 +16,20 @@ public class TP1_manipNombresInt_Artero {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
+       int ope1;
+       int ope2;
+       System.out.println("Veuillez choisir deux entiers"); 
+        Scanner sc;
+sc = new Scanner(System.in);  
+ope1 = sc.nextInt();
+ope2 = sc.nextInt();
+int add;
+add=ope1+ope2;
+int sous;
+sous=ope1-ope2;
+int mult;
+mult=ope1*ope2;
+System.out.println("L'addition: " + add + "\nLa soustraction: " + sous + "\nLa multiplication: " + mult); 
     
+}
 }
