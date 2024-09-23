@@ -21,6 +21,8 @@ public class Calculator {
         Scanner op;
 op = new Scanner(System.in);  
 operateur = op.nextInt();
+if (operateur>5){System.out.println("Veuillez choisir une valeur valide"); 
+}
 System.out.println("Entrez une première valeur");
 int operande1;
         Scanner ope;
