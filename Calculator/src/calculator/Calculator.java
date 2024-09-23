@@ -21,6 +21,16 @@ public class Calculator {
         Scanner op;
 op = new Scanner(System.in);  
 operateur = op.nextInt();
+System.out.println("Entrez une première valeur");
+int operande1;
+        Scanner ope;
+ope = new Scanner(System.in);  
+operande1 = ope.nextInt();
+System.out.println("Entrez une seconde valeur");
+int operande2;
+Scanner oper;
+oper = new Scanner(System.in);  
+operande2 = oper.nextInt();
     }
     
 }
