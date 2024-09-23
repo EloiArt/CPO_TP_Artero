@@ -29,7 +29,12 @@ int sous;
 sous=ope1-ope2;
 int mult;
 mult=ope1*ope2;
-System.out.println("L'addition: " + add + "\nLa soustraction: " + sous + "\nLa multiplication: " + mult); 
+int div;
+div=ope1/ope2;
+double reste;
+reste= div -ope1%ope2;
+System.out.println("L'addition: " + add + "\nLa soustraction: " + sous + "\nLa multiplication: " + mult +"\nQuotient entier: "+ div 
++ "\n Reste: " +reste); 
     
 }
 }
