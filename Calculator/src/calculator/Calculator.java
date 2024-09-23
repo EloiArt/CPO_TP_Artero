@@ -31,6 +31,23 @@ int operande2;
 Scanner oper;
 oper = new Scanner(System.in);  
 operande2 = oper.nextInt();
+double result;
+result=0;
+if (operateur==1){
+    result=operande1 + operande2;
+}
+else if(operateur==2){
+    result=operande1-operande2;
+}
+else if (operateur==3){
+    result=operande1*operande2;
+}
+else if (operateur==4){
+    result=operande1/operande2;
+}
+else if (operateur==5){
+    result=operande1%operande2;
+}
     }
     
 }
