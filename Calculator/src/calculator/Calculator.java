@@ -4,6 +4,8 @@
  */
 package calculator;
 
+import java.util.Scanner;
+
 /**
  * TP0 Partie 3
  * @author eloi
@@ -15,6 +17,10 @@ public class Calculator {
      */
     public static void main(String[] args) {
         System.out.println("Please enter the operator\n 1) add\n 2) substract\n 3) multiply\n 4) divide\n 5) modulo");
+        int operateur;
+        Scanner op;
+op = new Scanner(System.in);  
+operateur = op.nextInt();
     }
     
 }
