@@ -30,9 +30,9 @@ sous=ope1-ope2;
 int mult;
 mult=ope1*ope2;
 int div;
-div= (ope1*1.0)/(ope2*1.0);
+div=ope1/ope2;
 double reste;
-reste= (float) div -ope1%ope2;
+reste= (float)((ope1*1.0)/(ope2*1.0))-div;
 System.out.println("L'addition: " + add + "\nLa soustraction: " + sous + "\nLa multiplication: " + mult +"\nQuotient entier: "+ div 
 + "\n Reste: " +reste); 
     
