@@ -16,7 +16,7 @@ public class TP1_convertisseur_ARTERO {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    double val;
+    double val = 0;
     double choix;
     double un;
     double deux;
@@ -39,34 +39,34 @@ System.out.println("Saisissez la conversion que vous souhaiter effectuer :"+"\n1
   choix = sc.nextInt();
      if (choix == 1){
             
-            System.out.println(val+" degre Celcius est egal a "+CK+" deges Kelvin");
+            System.out.println(val+" degré Celcius est égal a "+un+" degrés Kelvin");
             
          }
          if (choix == 2){
             
-            System.out.println(val+" degre Kelvin est egal a "+KC+" deges Celcius");
+            System.out.println(val+" degré Kelvin est égal a "+deux+" degrés Celcius");
             
          }
         
          if (choix == 3){
             
-            System.out.println(val+" degre Farenheit est egal a "+FC+" deges Celcius");
+            System.out.println(val+" degré Farenheit est egal a "+trois+" degrés Celcius");
             
          }
         
          if (choix == 4){
             
-             System.out.println(val+" degre Celcius est egal a "+CF+" deges Farenheit");             
+             System.out.println(val+" degré Celcius est egal a "+quatre+" degrés Farenheit");             
          }
         
           if (choix == 5){
             
-             System.out.println(val+" degre Kelvin est egal a "+KF+" deges Farenheit");            
+             System.out.println(val+" degré Kelvin est egal a "+cinq+" degrés Farenheit");            
          }
          
            if (choix == 6){
             
-              System.out.println(val+" degre Farenheit est egal a "+FK+" deges Kelvin");            
+              System.out.println(val+" degré Farenheit est egal a "+six+" degrés Kelvin");            
          }
            else{
                 System.out.println(val+"Entrez une valeur correcte");
