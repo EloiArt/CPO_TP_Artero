@@ -24,12 +24,54 @@ public class TP1_convertisseur_ARTERO {
     double quatre;
     double cinq;
     double six;
+    un = CelciusVersKelvin (val);
+    deux = KelvinVersCelcius(val) ;
+    trois = FarenheitVersCelcius(val);
+    quatre = CelciusVersFarenheit(val);
+    cinq = KelvinVersFarenheit(val);
+    six = FarenheitVersKelvin(val);
        System.out.println("Bonjour, saisissez une valeur"); 
         Scanner sc;
 sc = new Scanner(System.in);  
 val = sc.nextDouble();
-System.out.println(val);
- 
+System.out.println("Saisissez la conversion que vous souhaiter effectuer :"+"\n1) De Celcius vers Kelvin" + "\n2) De Kelvin vers Celcius"+"\n3) De Farenheit vers Celcius"+"\n4) De Celcius vers Farenheit"+"5) De Kelvin vers Farenheit"+"\n6) De Farenheit vers Kelvin");
+
+  choix = sc.nextInt();
+     if (choix == 1){
+            
+            System.out.println(val+" degre Celcius est egal a "+CK+" deges Kelvin");
+            
+         }
+         if (choix == 2){
+            
+            System.out.println(val+" degre Kelvin est egal a "+KC+" deges Celcius");
+            
+         }
+        
+         if (choix == 3){
+            
+            System.out.println(val+" degre Farenheit est egal a "+FC+" deges Celcius");
+            
+         }
+        
+         if (choix == 4){
+            
+             System.out.println(val+" degre Celcius est egal a "+CF+" deges Farenheit");             
+         }
+        
+          if (choix == 5){
+            
+             System.out.println(val+" degre Kelvin est egal a "+KF+" deges Farenheit");            
+         }
+         
+           if (choix == 6){
+            
+              System.out.println(val+" degre Farenheit est egal a "+FK+" deges Kelvin");            
+         }
+           else{
+                System.out.println(val+"Entrez une valeur correcte");
+           }
+  
     }
 public static double CelciusVersKelvin (double tCelcius) {
          tCelcius = tCelcius+273;
