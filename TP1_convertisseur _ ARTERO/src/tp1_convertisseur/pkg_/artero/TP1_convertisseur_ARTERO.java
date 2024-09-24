@@ -21,11 +21,38 @@ public class TP1_convertisseur_ARTERO {
         Scanner sc;
 sc = new Scanner(System.in);  
 val = sc.nextDouble();
-double tempK;
-tempK= 273+val;
-System.out.println("Temperature en degré celcius: "+ val + " ℃"+"\nTemperature en Kelvin: "+tempK+" K"); 
+ 
     }
-public static double CelciusVersKelvin (double tCelcius) {    
-        return 0;
-} 
+public static double CelciusVersKelvin (double tCelcius) {
+         tCelcius = tCelcius+273;
+         return tCelcius;
+        }
+        
+         public static double KelvinVersCelcius (double tKelvin ) {
+         tKelvin = tKelvin-273;
+         return tKelvin;
+        }
+        
+         public static double FarenheitVersCelcius (double Farenheit ) {
+         Farenheit = (Farenheit-32)*0.55;
+         return Farenheit;
+        }
+        
+         public static double CelciusVersFarenheit (double Celcius ) {
+         Celcius = (Celcius*0.55) + 32;
+         return Celcius;
+        }
+        
+         public static double KelvinVersFarenheit (double Kelvin ) {
+         double celsius = KelvinVersCelcius(Kelvin);
+         double tfarenheit = CelciusVersFarenheit(celsius);
+         return tfarenheit;
+        }
+        
+         public static double FarenheitVersKelvin (double  farenheit) {
+         double celsius = FarenheitVersCelcius(farenheit);
+         double Kelvin = CelciusVersFarenheit(celsius);
+         return Kelvin;
+        }
+   
 }
