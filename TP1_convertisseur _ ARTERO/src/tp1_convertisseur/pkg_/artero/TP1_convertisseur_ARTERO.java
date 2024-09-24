@@ -71,6 +71,9 @@ System.out.println("Saisissez la conversion que vous souhaiter effectuer :"+"\n1
            if (choix>6){
                 System.out.println("Entrez une valeur correcte");
            }
+         if (choix<6){
+                System.out.println("Entrez une valeur correcte");
+           }
   
     }
 public static double CelciusVersKelvin (double tCelcius) {
