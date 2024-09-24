@@ -24,10 +24,11 @@ public class TP1_convertisseur_ARTERO {
     double quatre;
     double cinq;
     double six;
-       System.out.println("Veuillez choisir une valeur"); 
+       System.out.println("Bonjour, saisissez une valeur"); 
         Scanner sc;
 sc = new Scanner(System.in);  
 val = sc.nextDouble();
+System.out.println(val);
  
     }
 public static double CelciusVersKelvin (double tCelcius) {
