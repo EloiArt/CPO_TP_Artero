@@ -16,7 +16,7 @@ public class TP1_convertisseur_ARTERO {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    double val = 0;
+    double val;
     double choix;
     double un;
     double deux;
@@ -24,16 +24,16 @@ public class TP1_convertisseur_ARTERO {
     double quatre;
     double cinq;
     double six;
-    un = CelciusVersKelvin (val);
+       System.out.println("Bonjour, saisissez une valeur"); 
+        Scanner sc;
+sc = new Scanner(System.in);  
+val = sc.nextDouble();
+un = CelciusVersKelvin (val);
     deux = KelvinVersCelcius(val) ;
     trois = FarenheitVersCelcius(val);
     quatre = CelciusVersFarenheit(val);
     cinq = KelvinVersFarenheit(val);
     six = FarenheitVersKelvin(val);
-       System.out.println("Bonjour, saisissez une valeur"); 
-        Scanner sc;
-sc = new Scanner(System.in);  
-val = sc.nextDouble();
 System.out.println("Saisissez la conversion que vous souhaiter effectuer :"+"\n1) De Celcius vers Kelvin" + "\n2) De Kelvin vers Celcius"+"\n3) De Farenheit vers Celcius"+"\n4) De Celcius vers Farenheit"+"\n5) De Kelvin vers Farenheit"+"\n6) De Farenheit vers Kelvin");
 
   choix = sc.nextInt();
