@@ -34,7 +34,7 @@ public class TP1_convertisseur_ARTERO {
         Scanner sc;
 sc = new Scanner(System.in);  
 val = sc.nextDouble();
-System.out.println("Saisissez la conversion que vous souhaiter effectuer :"+"\n1) De Celcius vers Kelvin" + "\n2) De Kelvin vers Celcius"+"\n3) De Farenheit vers Celcius"+"\n4) De Celcius vers Farenheit"+"5) De Kelvin vers Farenheit"+"\n6) De Farenheit vers Kelvin");
+System.out.println("Saisissez la conversion que vous souhaiter effectuer :"+"\n1) De Celcius vers Kelvin" + "\n2) De Kelvin vers Celcius"+"\n3) De Farenheit vers Celcius"+"\n4) De Celcius vers Farenheit"+"\n5) De Kelvin vers Farenheit"+"\n6) De Farenheit vers Kelvin");
 
   choix = sc.nextInt();
      if (choix == 1){
@@ -68,8 +68,8 @@ System.out.println("Saisissez la conversion que vous souhaiter effectuer :"+"\n1
             
               System.out.println(val+" degré Farenheit est egal a "+six+" degrés Kelvin");            
          }
-           else{
-                System.out.println(val+"Entrez une valeur correcte");
+           if (choix>6){
+                System.out.println("Entrez une valeur correcte");
            }
   
     }
