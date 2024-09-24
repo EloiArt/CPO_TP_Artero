@@ -17,6 +17,13 @@ public class TP1_convertisseur_ARTERO {
      */
     public static void main(String[] args) {
     double val;
+    double choix;
+    double un;
+    double deux;
+    double trois;
+    double quatre;
+    double cinq;
+    double six;
        System.out.println("Veuillez choisir une valeur"); 
         Scanner sc;
 sc = new Scanner(System.in);  
