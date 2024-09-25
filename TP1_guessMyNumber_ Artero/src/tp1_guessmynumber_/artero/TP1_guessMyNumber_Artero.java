@@ -35,6 +35,20 @@ if (n<val){
 else if (n==val){
 System.out.println("Gagné !");
 }
+while (n!=val){
+    System.out.println("Saisissez un nombre entre 0 et 100"); 
+sc = new Scanner(System.in);  
+val = sc.nextInt();
+if (n<val){
+    System.out.println("Trop grand");
+}
+    else if (n>val){
+    System.out.println("Trop petit");
+    }
+else if (n==val){
+System.out.println("Gagné !");
+}
+}
 }
     }
     
