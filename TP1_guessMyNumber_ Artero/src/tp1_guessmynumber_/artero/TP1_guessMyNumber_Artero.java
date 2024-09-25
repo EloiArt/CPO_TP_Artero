@@ -5,6 +5,7 @@
 package tp1_guessmynumber_.artero;
 
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  *
@@ -17,8 +18,24 @@ public class TP1_guessMyNumber_Artero {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int val;
         Random generateurAleat = new Random();
         int n = generateurAleat.nextInt(100);
+        System.out.println("Saisissez un nombre entre 0 et 100"); 
+        Scanner sc;
+sc = new Scanner(System.in);  
+val = sc.nextInt();
+System.out.println(n);
+if (n>val){
+    System.out.println("Trop grand");
+}
+    else if (n<val){
+    System.out.println("Trop petit");
+    }
+else if (n==val){
+System.out.println("Gagné !");
+}
+}
     }
     
 }
