@@ -19,6 +19,7 @@ public class TP1_guessMyNumber_Artero {
     public static void main(String[] args) {
         // TODO code application logic here
         int val;
+        int i=1;
         Random generateurAleat = new Random();
         int n = generateurAleat.nextInt(100);
         System.out.println("Saisissez un nombre entre 0 et 100"); 
@@ -36,6 +37,7 @@ else if (n==val){
 System.out.println("Gagné !");
 }
 while (n!=val){
+    i = i +1 ;
     System.out.println("Saisissez un nombre entre 0 et 100"); 
 sc = new Scanner(System.in);  
 val = sc.nextInt();
@@ -48,6 +50,7 @@ if (n<val){
 else if (n==val){
 System.out.println("Gagné !");
 }
+System.out.println(i+" Tentatives");
 }
 }
     }
