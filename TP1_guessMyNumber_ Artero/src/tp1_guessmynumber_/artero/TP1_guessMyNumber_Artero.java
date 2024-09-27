@@ -19,39 +19,50 @@ public class TP1_guessMyNumber_Artero {
     public static void main(String[] args) {
         // TODO code application logic here
         int val;
+        int dif;
         int i=1;
+        System.out.println("Choisi 1, 2 ou 3");
+         Scanner an;
+an = new Scanner(System.in);  
+dif = an.nextInt();
         Random generateurAleat = new Random();
         int n = generateurAleat.nextInt(100);
-        System.out.println("Saisissez un nombre entre 0 et 100"); 
+         if (dif==1){
+       System.out.println("mode 1");}
+         if (dif==2){
+       System.out.println("mode 2, nb de tentative limité a 10");}
+         if (dif==3){
+       System.out.println("mode 3");}
+          System.out.println("Saisissez un nombre entre 0 et 100");
         Scanner sc;
 sc = new Scanner(System.in);  
 val = sc.nextInt();
-System.out.println(n);
-if (n<val){
-    System.out.println("Trop grand");
-}
-    else if (n>val){
-    System.out.println("Trop petit");
-    }
-else if (n==val){
-System.out.println("Gagné !");
-}
+
 while (n!=val){
-    i = i +1 ;
-    System.out.println("Saisissez un nombre entre 0 et 100"); 
-sc = new Scanner(System.in);  
-val = sc.nextInt();
+    
+    
+    i = i +1 ; 
 if (n<val){
     System.out.println("Trop grand");
+    sc = new Scanner(System.in);  
+val = sc.nextInt();
 }
     else if (n>val){
     System.out.println("Trop petit");
+    sc = new Scanner(System.in);  
+val = sc.nextInt();
     }
 else if (n==val){
 System.out.println("Gagné !");
 }
 System.out.println(i+" Tentatives");
 }
+if (dif==2){
+         
+if (i>9){ 
+    return;
+}
+    }
 }
     }
     
