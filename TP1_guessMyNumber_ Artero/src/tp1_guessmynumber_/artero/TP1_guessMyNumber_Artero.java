@@ -21,7 +21,7 @@ public class TP1_guessMyNumber_Artero {
         int val;
         int dif;
         int i=1;
-        System.out.println("Choisi 1, 2 ou 3");
+        System.out.println("Choisis ton mode de jeu: 1 Facile, 2 Moyzn  ou 3 Difficile");
          Scanner an;
 an = new Scanner(System.in);  
 dif = an.nextInt();
@@ -30,7 +30,7 @@ dif = an.nextInt();
          if (dif==1){
        System.out.println("mode 1, indication plus claire et coups illimités");}
          if (dif==2){
-       System.out.println("mode 2, nb de tentative limité a 10");}
+       System.out.println("mode 2, nombres de tentatives limité a 10");}
          if (dif==3){
        System.out.println("mode 3");}
           System.out.println("Saisissez un nombre entre 0 et 100");
