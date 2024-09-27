@@ -43,11 +43,12 @@ while (n!=val){
     
     i = i +1 ; 
 if (n<val){
+    if (dif==1){if (val-n>20){System.out.println("Vraiment trop grand");}}
     System.out.println("Trop grand");
     sc = new Scanner(System.in);  
 val = sc.nextInt();
 }
-    else if (n>val){
+    else if (n>val){if (dif==1){if (n-val>20){System.out.println("Vraiment trop petit");}}
     System.out.println("Trop petit");
     sc = new Scanner(System.in);  
 val = sc.nextInt();
