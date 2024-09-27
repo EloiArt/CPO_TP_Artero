@@ -55,12 +55,14 @@ val = sc.nextInt();
     }
 else if (n==val){
 System.out.println("Gagné !");
+
 }
 System.out.println(i+" Tentatives");
-}
+
 if (dif==2){
          
-if (i>9){ 
+if (i==10){ 
+    System.out.println(i+" Perdu !");
     return;
     
 }
@@ -68,12 +70,15 @@ if (i>9){
     }
 if (dif==3){
          
-if (i>2){ 
+if (i==3){ 
+     System.out.println(i+" Perdu !");
     return;
     
 }
 
     }
+}
+
 }
     }
     
