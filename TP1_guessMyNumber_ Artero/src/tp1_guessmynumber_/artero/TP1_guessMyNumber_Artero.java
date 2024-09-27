@@ -28,7 +28,7 @@ dif = an.nextInt();
         Random generateurAleat = new Random();
         int n = generateurAleat.nextInt(100);
          if (dif==1){
-       System.out.println("mode 1");}
+       System.out.println("mode 1, indication plus claire et coups illimités");}
          if (dif==2){
        System.out.println("mode 2, nb de tentative limité a 10");}
          if (dif==3){
