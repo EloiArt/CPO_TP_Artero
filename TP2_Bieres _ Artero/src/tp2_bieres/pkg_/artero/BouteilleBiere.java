@@ -25,5 +25,23 @@ ouverte = false;
 System.out.println("Bouteille de " + Nom +" (" + degreAlcool +
 " degres) \nBrasserie : " + brasserie ) ;
 }
+     public boolean decapsuler() {
+        if (ouverte) {
+            System.out.println("Erreur : bière déjà ouverte.");
+            return false;
+        } else {
+            ouverte = true;
+            System.out.println("La bière " + Nom + " est maintenant ouverte.");
+            return true;
+        }
+    }
+     @Override
+public String toString() {
+String chaine_a_retourner;
+chaine_a_retourner = Nom + " (" + degreAlcool + " degrés)Ouverte ?";
+if (ouverte == true ) chaine_a_retourner += "oui" ;
+else chaine_a_retourner += "non" ;
+return chaine_a_retourner ;
+}
 }
 

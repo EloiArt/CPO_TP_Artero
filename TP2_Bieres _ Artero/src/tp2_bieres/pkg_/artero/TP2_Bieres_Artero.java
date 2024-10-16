@@ -18,9 +18,21 @@ public class TP2_Bieres_Artero {
         BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls",
 7.0 ,"Dubuisson") ;
         uneBiere.lireEtiquette();
+        uneBiere.decapsuler();
        BouteilleBiere Biere = new BouteilleBiere("Leffe",
 6.6 ,"Abbaye de Leffe") ;
         Biere.lireEtiquette();
+        Biere.decapsuler();
+        BouteilleBiere laBiere = new BouteilleBiere("8.6",
+83.2 ,"Maison de la bibine") ;
+        laBiere.lireEtiquette();
+        laBiere.decapsuler();
+        BouteilleBiere maBiere = new BouteilleBiere("Bud",
+7.8 ,"La Binouzerie") ;
+        maBiere.lireEtiquette();
+        maBiere.decapsuler();
+        
+        
         
     }
     
