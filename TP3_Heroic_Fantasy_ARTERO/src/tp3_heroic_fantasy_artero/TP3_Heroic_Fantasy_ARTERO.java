@@ -4,6 +4,11 @@
  */
 package tp3_heroic_fantasy_artero;
 
+import arme.epee;
+import arme.baton;
+import Personnages.Magicien;
+import Personnages.Guerrier;
+
 /**
  *
  * @author eloi
@@ -15,10 +20,39 @@ public class TP3_Heroic_Fantasy_ARTERO {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Arme epee = new Arme("Épée légendaire", 10);
-        System.out.println("Nom de l'arme : " + epee.getNom());  // Affiche : Épée légendaire
-        System.out.println("Niveau d'attaque : " + epee.getAttaque());  // Affiche : 90
-   
+           // Création des armes
+        epee excalibur = new epee("Excalibur", 7, 5);
+        epee durandal = new epee("Durandal", 4, 7);
+        baton chene = new baton("Chêne", 4, 5);
+        baton charme = new baton("Charme", 5, 6);
+
+        // Création des personnages
+        Guerrier conan = new Guerrier("Conan", 78, true);
+        Magicien gandalf = new Magicien("Gandalf", 65, false);
+
+        // Ajout d'armes
+        conan.ajouterArme(excalibur);
+        conan.ajouterArme(durandal);
+        gandalf.ajouterArme(chene);
+        gandalf.ajouterArme(charme);
+
+        // Equipement
+        conan.equiperArme("Excalibur");
+        gandalf.equiperArme("Chêne");
+
+        // Combat
+        System.out.println("\nDébut du combat !");
+        conan.attaquer(gandalf);
+        gandalf.attaquer(conan);
+
+        // Affichage des résultats
+        System.out.println("\nÉtat des personnages :");
+        System.out.println(conan);
+        System.out.println(gandalf);
     }
-    
 }
+
+   
+    
+    
+
